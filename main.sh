@@ -33,5 +33,10 @@ cat > package.json <<EOF
     }
 }
 EOF
+cat > package.json <<EOF
+node_modules/
+package-lock.json
+*.jsx.js
+EOF
 echo 'App created!'
 echo "Now, run 'npm start' in your app's directory!"
