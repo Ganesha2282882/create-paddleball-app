@@ -33,7 +33,7 @@ cat > package.json <<EOF
     }
 }
 EOF
-cat > package.json <<EOF
+cat > .gitignore <<EOF
 node_modules/
 package-lock.json
 *.jsx.js
