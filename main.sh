@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Adding files..."
-mv package.json packag.json
+mv package.json packag.json 1> /dev/null 2> /dev/null
 mkdir $1
 cd $1
 npm i buble 1> /dev/null 2> /dev/null
@@ -42,6 +42,6 @@ package-lock.json
 *.jsx.js
 EOF
 cd ..
-mv packag.json package.json
+mv packag.json package.json 1> /dev/null 2> /dev/null
 echo 'App created!'
 echo "Now, run 'npm start' in your app's directory!"
