@@ -12,14 +12,16 @@ cat > index.html <<EOF
 <body>
     <script src="paddleball.js"></script>
     <script src="index.jsx.js"></script>
-</body>
+    <div id="root"></div>
+    </body>
 </html>
 EOF
 cat > index.jsx <<EOF
-<div>
+var main = <div>
     <h1>Welcome to paddleball!</h1>
     <p>Edit <code>index.jsx</code> to change this page.</p>
 </div>
+PbDOM.render(main, document.getElementById("root"));
 EOF
 cat > build.sh <<EOF
 for i in *.jsx
