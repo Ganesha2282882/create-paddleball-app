@@ -11,7 +11,7 @@ cat > index.html <<EOF
 <html>
 <body>
     <script src="paddleball.js"></script>
-    <script src="index.jsx.js"></script>
+    <script src="index.jsx.js" defer></script>
     <div id="root"></div>
     </body>
 </html>
