@@ -32,7 +32,8 @@ EOF
 cat > package.json <<EOF
 {
     "scripts": {
-        "start": "killall python; bash build.sh && bash -c 'python -m http.server 12345 1> /dev/null 2> /dev/null &' && sleep 1; xdg-open http://localhost:12345"
+        "start": "killall python; bash build.sh && bash -c 'python -m http.server 12345 1> /dev/null 2> /dev/null &' && sleep 1; xdg-open http://localhost:12345",
+        "build": "bash build.sh"
     }
 }
 EOF
